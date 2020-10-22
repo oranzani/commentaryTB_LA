@@ -1,7 +1,7 @@
 
 #### generating data for a commentary on the current trend on incidence of TB
 #### on Latin America, based on WHO Global Report TB Data
-#### Otavio Ranzani, March 2020
+#### Otavio Ranzani, October 2020
 
 
 ### getting data by the getTBinR package, which uses data from the WHO website
