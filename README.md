@@ -1,2 +1,2 @@
 # commentaryTB_LA
-Code for commentary about Tuberculosis Burden in Latin America
+Code for comment about Tuberculosis Burden in Latin America (under review)
