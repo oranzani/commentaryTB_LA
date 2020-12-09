@@ -16,6 +16,7 @@ library(Hmisc)
 library(ggrepel)
 library(viridis)
 library(cowplot)
+library(ggpubr)
 
 # checking data availability
 data <- getTBinR::available_datasets
@@ -217,6 +218,7 @@ plot1 <- tb_burden_a %>%
   scale_y_log10(breaks = c(seq(0,50,5), seq(60,200, 20)), limits = c(12,200)) + 
   scale_x_continuous(breaks = seq(2000,2019,1)) 
   plot1
+  
 # Case notification
 plot2 <- tb_burden_a %>% 
   filter(country %in% countries & year >=2000) %>% 
@@ -246,6 +248,7 @@ plot2 <- tb_burden_a %>%
   scale_x_continuous(breaks = seq(2000,2019,1)) +
   scale_y_log10(breaks = c(seq(0,50,5), seq(60,200, 20)), limits = c(12,200))
   plot2
+  
 # Notified cases
  plot3 <- tb_burden_a %>% 
   filter(country %in% countries & year >=2000) %>% 
@@ -279,6 +282,7 @@ plot2 <- tb_burden_a %>%
      limits = c(480, 100000)) + 
    scale_x_continuous(breaks = seq(2000,2019,1)) 
 plot3
+
 ## 
 quartz( ,21,7) # openning for Mac
 
